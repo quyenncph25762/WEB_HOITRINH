@@ -1,0 +1,10 @@
+const express = require("express")
+const ProductsController = require("../controllers/ProductsController")
+const routerProduct = express.Router()
+routerProduct.get("/", ProductsController.getAllProductController)
+routerProduct.get("/:id", ProductsController.getOneProductByIdController)
+routerProduct.post("/add", ProductsController.addProductController)
+routerProduct.delete("/:id", ProductsController.removeProductByIdController)
+routerProduct.put("/update/:id", ProductsController.updateProductController)
+// routerProduct.patch("/patch/:id", ProductsController.updateProductController)
+module.exports = routerProduct

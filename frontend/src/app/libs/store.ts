@@ -3,11 +3,13 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { productQuanlityReducer } from "./Features/productQuanlity/productQuanlity"
 import { newsReducer } from "./Features/news/news"
+import { productClientSliceReducer } from "./Features/products/productSlice"
 
 export const store = configureStore({
     reducer: {
         productQuantityReducer: productQuanlityReducer,
-        newsReducer: newsReducer
+        newsReducer: newsReducer,
+        productClientSliceReducer: productClientSliceReducer
     }
 })
 

@@ -7,7 +7,9 @@ export interface IProduct {
     discount: number
     description: string
     categoryId: string
-    varriants: IVarriant[]
+    image: string
+    averageStar: number
+    varriants?: IVarriant[]
 }
 
 export interface IProductState {
