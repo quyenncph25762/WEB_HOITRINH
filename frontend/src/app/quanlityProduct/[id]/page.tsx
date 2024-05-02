@@ -7,6 +7,7 @@ import React from 'react'
 
 const page = async ({ params }: { params: { id: string } }) => {
     const getOneProductQuanlity = await fetchOneProductQuanlity(params.id ? params.id : "")
+    console.log(getOneProductQuanlity)
     return (
         <div>
             <HeaderComponents></HeaderComponents>

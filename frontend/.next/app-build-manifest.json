@@ -17,10 +17,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/products/page.js"
     ],
-    "/introduce/page": [
+    "/products/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/introduce/page.js"
+      "static/chunks/app/products/[id]/page.js"
     ]
   }
 }

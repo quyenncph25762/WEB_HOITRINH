@@ -3,7 +3,6 @@ import { Carousel } from 'antd';
 import React, { Dispatch, useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper/modules";
-// Import Swiper styles
 import 'swiper/css';
 import "swiper/css/navigation";
 import { useSpring, animated } from '@react-spring/web';
@@ -53,7 +52,7 @@ const ServiceComponents = (props: IProps) => {
                     }}
                     modules={[Navigation]}
                 >
-                    {listProductQuanlityState.map((productQuanlity, index) => (
+                    {listProductQuanlityState?.map((productQuanlity, index) => (
                         <SwiperSlide>
                             <div className="flex flex-col text-gray-700 bg-white border-2 shadow-md bg-clip-border rounded-xl mt-[20px]">
                                 <div

@@ -2,7 +2,7 @@ import { IVarriant } from "../varriant/varriant.interface"
 
 export interface IProduct {
     _id?: string
-    title: string
+    productName: string
     price: number
     discount: number
     description: string
@@ -13,5 +13,9 @@ export interface IProduct {
 }
 
 export interface IProductState {
+    products: IProduct[]
+}
+export interface IProductSearchState {
+    nameTerm: string
     products: IProduct[]
 }
