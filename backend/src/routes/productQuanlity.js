@@ -1,6 +1,6 @@
 const express = require("express")
-const ProductQuanlityController = require("../controllers/ProductQuanlityController")
 const routerProductQuanlity = express.Router()
+const ProductQuanlityController = require("../controllers/ProductQuanlityController")
 
 routerProductQuanlity.get("/", ProductQuanlityController.getAll)
 routerProductQuanlity.get("/:id", ProductQuanlityController.getOne)
